@@ -1,0 +1,60 @@
+<div class="container">
+   
+<div class="row">
+<h1> </h1>
+    <hr>
+</div>    
+
+    <div class="row">
+         <div class="col-sm-offset-0 col-sm-2">
+         </div>
+         <div class="col-sm-8">
+            <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                <a class="btn btn-primary" href="http://localhost:3000/rock"> Play Rock </a>
+                <a class="btn btn-info" href="http://localhost:3000/paper"> Play Paper </a>
+                <a class="btn btn-primary" href="http://localhost:3000/scissors"> Play Scissors </a>
+            </div>
+        </div>
+        <div class="col-sm-2">
+        </div>
+    </div>
+
+<div class="row">
+<h1> </h1>
+<hr>
+</div>    
+    
+ <div class="row">
+     <div class="col-sm-offset-2 col-sm-4">    
+        <div class="panel panel-success">
+          <div class="panel-heading"> 
+            <h3 class="panel-title text-center"> <%= @player_move %> </h3>
+          </div>
+          <div class="panel-body">
+            <img src="assets/images/paper.png" class = "img-responsive">
+          </div>
+        </div>
+    </div>
+        
+     <div class="col-sm-4">    
+        <div class="panel panel-danger">
+          <div class="panel-heading"> 
+            <h3 class="panel-title text-center"> <%= @computer_move %> </h3>
+          </div>
+          <div class="panel-body">
+            <img src = <%="assets/images/#{@computer_move}.png" %> class = "img-responsive">
+          </div>
+        </div>
+    </div>
+    </div>
+    
+  
+    <div class="row">
+        <div class="col-sm-offset-2 col-sm-8">
+            <div class="well text-center">
+                <h1> <span class= "<%= @bttn %>" > <%= @outcome %> </span> </h1>
+            </div>
+        </div>
+    </div>
+
+</div>
